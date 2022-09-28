@@ -1,0 +1,15 @@
+﻿Add Microsoft.EntityFrameworkCore.Tools
+Add Microsoft.EntityFrameworkCore.SqlServer
+Add Provider(Package Manager) =>	Connection Strings Parameter  (Scaffold-DbContext 'Server=ASUS;Database=Northwind;Trusted_Connection=True')
+Dotnet CLI için =>  dotnet ef dbcontext scaffold 'Connection String' Microsoft.EntityFrameworkCore.SqlServer
+
+## Tabloları Belirtmek ##
+Geliştirici PowerShell=> dotnet ef dbcontext scaffold 'Server=ASUS;Database=Northwind;Trusted_Connection=True' Microsoft.EntityFrameworkCore.SqlServer --table Products --table Orders
+Package Manager Console =>Scaffold-DbContext 'Server=ASUS;Database=Northwind;Trusted_Connection=True' Microsoft.EntityFrameworkCore.SqlServer -Tables Orders, Products
+
+## Force ## 
+Veritabanı güncellemeleri için kullanılmaktadır.
+dotnet ef dbcontext scaffold 'Server=ASUS;Database=Northwind;Trusted_Connection=True' Microsoft.EntityFrameworkCore.SqlServer --force
+Scaffold-DbContext 'Server=ASUS;Database=Northwind;Trusted_Connection=True' Microsoft.EntityFrameworkCore.SqlServer -force
+
+

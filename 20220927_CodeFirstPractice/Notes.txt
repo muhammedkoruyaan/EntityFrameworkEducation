@@ -1,0 +1,15 @@
+﻿Add NuGet Package => SqlServer
+Add NuGet Package => EntityFramework.Tools
+
+## For Migrations CLI=> dotnet ef migrations add [Migration name]
+
+## Specify Migrations pack => dotnet ef migrations add [Migration name] --output-dir [Path]
+
+## For remove Migration => dotnet ef migrations remove
+
+## For List migrations => dotnet ef migrations list
+
+## Create or Update on Database => dotnet ef database update
+
+## migration down (Remove) => dotnet ef database update [Migration Name]
+
